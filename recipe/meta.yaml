@@ -45,6 +45,7 @@ test:
     - vak
   commands:
     - pip check
+    - vak --help
   requires:
     - pip
 
