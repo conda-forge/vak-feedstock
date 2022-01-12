@@ -11,9 +11,11 @@ source:
   sha256: b7bb621a47135e1d351becb82cdbe21237c39d4fcbbeaec677e31db02cc68900
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - vak=vak.__main__:main
 
 requirements:
   host:
@@ -43,6 +45,7 @@ test:
     - vak
   commands:
     - pip check
+    - vak --help
   requires:
     - pip
 
