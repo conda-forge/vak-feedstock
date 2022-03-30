@@ -24,9 +24,9 @@ requirements:
     - flit-core
   run:
     - attrs >=19.3.0
-    - crowsetta >=3.2
+    - crowsetta >=3.4.0
     - dask-core >=2.10.1
-    - evfuncs >=0.3.2
+    - evfuncs >=0.3.4
     - joblib >=0.14.1
     - matplotlib-base >=3.3.3
     - numpy >=1.18.1
