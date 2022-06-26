@@ -20,18 +20,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - flit-core
   run:
     - attrs >=19.3.0
-    - crowsetta >=3.4.0
+    - crowsetta >=3.4.0,<4.0.0
     - dask-core >=2.10.1
     - evfuncs >=0.3.4
     - joblib >=0.14.1
     - matplotlib-base >=3.3.3
     - numpy >=1.18.1
     - pandas >=1.0.1
-    - python >=3.7
+    - python >=3.8
     - scipy >=1.4.1
     - pysoundfile >=0.10.3
     - tensorboard >=2.8.0
@@ -52,7 +52,7 @@ test:
 about:
   home: https://pypi.org/project/vak/
   summary: a neural network toolbox for animal vocalizations and bioacoustics
-  dev_url: https://github.com/NickleDave/vak
+  dev_url: https://github.com/vocalpy/vak
   license: BSD-3-Clause
   license_file: LICENSE
 
