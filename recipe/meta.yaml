@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 490e4bf8ab7bc13c50f1914e537a379285c338f7123314e5b882845fec7c5b17
+  sha256: d8ce1fbd8a08b27a38ae1639a0aa73512ac1a90ada76f2f3cf76c8989e7e141b
 
 build:
   number: 0
@@ -20,18 +20,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - flit-core
   run:
     - attrs >=19.3.0
-    - crowsetta >=3.4.0
+    - crowsetta >=3.4.0,<4.0.0
     - dask-core >=2.10.1
     - evfuncs >=0.3.4
     - joblib >=0.14.1
     - matplotlib-base >=3.3.3
     - numpy >=1.18.1
     - pandas >=1.0.1
-    - python >=3.7
+    - python >=3.8
     - scipy >=1.4.1
     - pysoundfile >=0.10.3
     - tensorboard >=2.8.0
@@ -52,7 +52,7 @@ test:
 about:
   home: https://pypi.org/project/vak/
   summary: a neural network toolbox for animal vocalizations and bioacoustics
-  dev_url: https://github.com/NickleDave/vak
+  dev_url: https://github.com/vocalpy/vak
   license: BSD-3-Clause
   license_file: LICENSE
 
