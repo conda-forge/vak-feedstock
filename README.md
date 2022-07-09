@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vak-feedstock/b
 
 Summary: a neural network toolbox for animal vocalizations and bioacoustics
 
-Development: https://github.com/NickleDave/vak
+Development: https://github.com/vocalpy/vak
 
 Current build status
 ====================
