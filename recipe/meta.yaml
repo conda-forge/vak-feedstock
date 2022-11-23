@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 2ccbea093865effdde10d92d632da4cb4d8b2d1b2e1cc543fd54822c8f0d8e82
+  sha256: 64f46d2a808629e7c10f9e79e73e926d2dff1dd37b9befc5c542a8584bf65e82
 
 build:
   number: 0
