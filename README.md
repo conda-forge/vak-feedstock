@@ -1,11 +1,11 @@
-About vak
-=========
+About vak-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vak-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/vak/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vak-feedstock/blob/main/LICENSE.txt)
 
 Summary: a neural network toolbox for animal vocalizations and bioacoustics
 
