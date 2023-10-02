@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "1.0.0a1" %}
+{% set version = "0.8.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 1cbf712524c28eec56983e054b98b9ed9dc1dd3edc140d6c0622c9edfdfb69a9
+  sha256: d113ebaaefa38d42ea84e12f7c075b888eca67a2eac0d8e260380346d0550458
 
 build:
   number: 0
@@ -29,7 +29,6 @@ requirements:
     - evfuncs >=0.3.4
     - joblib >=0.14.1
     - matplotlib-base >=3.3.3
-    - pytorch-lightning >=1.8.4.post0
     - numpy >=1.18.1
     - pandas >=1.0.1
     - python >=3.8
