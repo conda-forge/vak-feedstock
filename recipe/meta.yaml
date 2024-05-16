@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "1.0.0a3" %}
+{% set version = "1.0.0.post2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 39641cf095fe2d811c25f226b34a487c4146f2694fcd2345634f63cfab2acf99
+  sha256: 17be2b3e84130c2a3a17856de40e976291bb58530fcab9dfa8a629a39a213af5
 
 build:
   number: 0
@@ -25,19 +25,19 @@ requirements:
   run:
     - attrs >=19.3.0
     - crowsetta >=5.0.1
-    - dask-core >=2.10.1
+    - dask >=2.10.1
     - evfuncs >=0.3.4
     - joblib >=0.14.1
+    - lightning >=2.0.7
     - matplotlib-base >=3.3.3
-    - pytorch-lightning >=2.0.7
     - numpy >=1.18.1
     - pandas >=1.0.1
     - pynndescent >=0.5.10
-    - python >=3.8
+    - python >=3.9
     - scipy >=1.4.1
     - pysoundfile >=0.10.3
     - tensorboard >=2.8.0
-    - toml >=0.10.2
+    - tomlkit >=0.12.4
     - pytorch >=2.0.1
     - torchvision >=0.15.2
     - tqdm >=4.42.1
