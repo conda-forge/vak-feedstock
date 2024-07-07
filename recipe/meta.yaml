@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "1.0.0.post2" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 17be2b3e84130c2a3a17856de40e976291bb58530fcab9dfa8a629a39a213af5
+  sha256: 75c74f8c771422f73c975a416b3f82a291b50398861f68beb04ddcb6b6a9177f
 
 build:
   number: 0
@@ -20,28 +20,28 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.10
     - flit-core
   run:
-    - attrs >=19.3.0
-    - crowsetta >=5.0.1
-    - dask >=2.10.1
+    - attrs >=23.1.0
+    - crowsetta >=5.0.3
+    - dask >=2024.5.0
     - evfuncs >=0.3.4
-    - joblib >=0.14.1
-    - lightning >=2.0.7
-    - matplotlib-base >=3.3.3
-    - numpy >=1.18.1
-    - pandas >=1.0.1
-    - pynndescent >=0.5.10
-    - python >=3.9
-    - scipy >=1.4.1
-    - pysoundfile >=0.10.3
+    - joblib >=1.4.2
+    - lightning >=2.2.4
+    - matplotlib-base >=3.7.1
+    - numpy >=1.24.0, <2.0
+    - pandas >=1.4.0
+    - pynndescent >=0.5.12
+    - python >=3.10
+    - scipy >=1.9.1
+    - pysoundfile >=0.12.1
     - tensorboard >=2.8.0
     - tomlkit >=0.12.4
-    - pytorch >=2.0.1
-    - torchvision >=0.15.2
-    - tqdm >=4.42.1
-    - umap-learn >=0.5.3
+    - pytorch >=2.3.0
+    - torchvision >=0.18.0
+    - tqdm >=4.66.4
+    - umap-learn >=0.5.6
 
 test:
   imports:
