@@ -19,7 +19,9 @@ build:
 
 requirements:
   host:
-    - pip
+    # place temporary upper bound on pip so pip check does not fail on soundfile
+    # see https://github.com/conda-forge/pysoundfile-feedstock/issues/22
+    - pip <24.2
     - python >=3.10
     - flit-core
   run:
