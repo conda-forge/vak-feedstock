@@ -1,5 +1,5 @@
 {% set name = "vak" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
-  sha256: 75c74f8c771422f73c975a416b3f82a291b50398861f68beb04ddcb6b6a9177f
+  sha256: 77c0eb69ba58aee15548ba541bf1bd6662bc4c629eb4fa495657d24ced59367b
 
 build:
   number: 0
@@ -50,7 +50,9 @@ test:
     - pip check
     - vak --help
   requires:
-    - pip
+    # place temporary upper bound on pip so pip check does not fail on soundfile
+    # see https://github.com/conda-forge/pysoundfile-feedstock/issues/22
+    - pip <24.2
 
 about:
   home: https://pypi.org/project/vak/
