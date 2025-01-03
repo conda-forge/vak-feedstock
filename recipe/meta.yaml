@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "vak" %}
 {% set version = "1.0.3" %}
 
@@ -7,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vak-{{ version }}.tar.gz
   sha256: 120e9c0421f3a433ed6319a6325e4abaec3972005252d24d55bdc131e90707c1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - flit-core
   run:
     - attrs >=23.1.0
@@ -33,7 +34,7 @@ requirements:
     - numpy >=1.24.0, <2.0
     - pandas >=1.4.0
     - pynndescent >=0.5.12
-    - python >=3.10
+    - python >={{ python_min }}
     - scipy >=1.9.1
     - pysoundfile >=0.12.1
     - tensorboard >=2.8.0
@@ -53,6 +54,7 @@ test:
     # place temporary upper bound on pip so pip check does not fail on soundfile
     # see https://github.com/conda-forge/pysoundfile-feedstock/issues/22
     - pip <24.2
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/vak/
